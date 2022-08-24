@@ -27,6 +27,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ibc_league
 github_username:  IBC-League
 
+# permalink
+permalink: /:title:output_ext
+
+
 # Build settings
 theme: minima
 plugins:
