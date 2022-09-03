@@ -30,8 +30,13 @@ permalink: /:title:output_ext
 
 # Build settings
 theme: minima
+# Paginator
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 2
+paginate_path: "page:num"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

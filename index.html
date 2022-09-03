@@ -1,0 +1,73 @@
+---
+layout: default
+---
+<h2 class="post-list-heading">{{ page.list_title  }}</h2>
+<ul class="post-list">
+  {%- for post in paginator.posts -%}
+  <div style="border: 1px solid #212121;border-radius: 20px;display: block;margin: 12px 0 20px;overflow: hidden;">
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span style="margin: 10px 0 0 10px;" class="post-meta">{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}</span>
+      <h3 style="margin: 0 0 0 10px;">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if post.show_excerpt -%}
+      <div style="margin: 0 0 0 10px;">
+        {{ post.excerpt }}
+      </div>
+      <p class="repo-list-meta">
+
+        {% for cat in post.categories %}
+        <span style="margin: 10px 0 0 10px;border-bottom-style:dotted;" class="meta-info">
+          <span class="octicon octicon-file-directory"></span>
+          <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+        </span>
+        {% endfor %}
+      </p>
+
+      {%- endif -%}
+    </li>
+  </div>
+  {%- endfor -%}
+</ul>
+
+
+<div class="pagination text-align">
+  <div class="btn-group">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      &nbsp; &nbsp; <a href="{{ site.url }}/" class="btn btn-outline">&laquo;</a>
+      {% else %}
+      &nbsp; &nbsp; 
+          <a href="{{ site.url }}/page{{paginator.previous_page}}"  class="btn btn-outline">&laquo;</a>
+      {% endif %}
+    {% else %}
+        <button disabled="disabled" href="javascript:;" class="btn btn-outline">&laquo;</button>
+    {% endif %}
+    {% if paginator.page == 1 %}
+    &nbsp; &nbsp; <a href="javascript:;" class="active btn btn-outline">1</a>
+    {% else %}
+    &nbsp; &nbsp; <a href="{{ site.url }}/"  class="btn btn-outline">1</a>
+    {% endif %}
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+      &nbsp; &nbsp; <a href="javascript:;"  class="active btn btn-outline">{{count}}</a>
+      {% else %}
+          &nbsp; &nbsp; <a href="{{ site.url }}/page{{count}}"  class="btn btn-outline">{{count}}</a>
+      {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+          &nbsp; &nbsp; <a href="{{ site.url }}/page{{paginator.next_page}}"  class="btn btn-outline">&raquo;</a>
+    {% else %}
+    &nbsp; &nbsp; <button disabled="disabled" href="javascript:;" class="btn btn-outline">&raquo;</button>
+    {% endif %}
+    </div>
+</div>
+<!-- /pagination -->
+
+
+<br/>
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
