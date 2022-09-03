@@ -35,7 +35,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-paginate: 2
+paginate: 50
 paginate_path: "page:num"
 
 # Exclude from processing.
