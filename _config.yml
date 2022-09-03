@@ -18,14 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: IBCL
-email: idea.wangtj@gmail.com
+title: IBCL | Cosmso生态联盟
 description: >- # this means to ignore newlines until "baseurl:"
-  IBCL | Cosmso生态联盟社区
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ibc_league
-github_username:  IBC-League
 
 # permalink
 permalink: /:title:output_ext
