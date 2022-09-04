@@ -8,6 +8,16 @@ layout: default
     <li>
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <span style="margin: 10px 0 0 10px;" class="post-meta">{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}</span>
+
+      {%- if post.links.size > 0 -%}
+      <div class="toplinks" style="float: right;margin-right: 10px;">
+      {%- for link in post.links -%}
+      <a href="{{ link.link}}" target="_blank">{{link.name}}</a>
+ 
+      {% endfor %}
+      </div>
+      {%- endif -%}
+
       <h3 style="margin: 0 0 10px 10px;">
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
