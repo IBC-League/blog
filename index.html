@@ -12,7 +12,7 @@ layout: default
       {%- if post.links.size > 0 -%}
       <div class="toplinks" style="float: right;margin-right: 10px;">
       {%- for link in post.links -%}
-      <a href="{{ link.link}}" target="_blank">{{link.name}}</a>
+      <a href="{{ link.link}}" target="_blank" style="margin-right:10px;">{{link.name}}</a>
  
       {% endfor %}
       </div>

@@ -5,3 +5,11 @@
 @import "minima";
 
 .site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; margin-bottom: 0;  }
+
+.tweetstyle img {  border: 1px solid #131313;border-radius: 50%;display: block;height: 48px;width: 48px; margin-right: 10px;}
+.tweetstyle {margin-right: 12px;position: relative; align-items: stretch;display: flex;line-height: 24px;padding: 8px 16px;}
+
+.toplinks a:link{color:orange;}      /* 未访问链接*/
+.toplinks a:visited {color:grey;} /*  /* 已访问链接 */
+.toplinks a:hover {color:grey;}  /* 鼠标移动到链接上 */
+.toplinks a:active {color:#0000FF;}  /* 鼠标点击时 */

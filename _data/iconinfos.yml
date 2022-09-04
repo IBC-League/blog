@@ -1,4 +1,5 @@
-- name: 'Alex Wang'
+- username: 'Alex Wang'
+  nickname: '红军大叔'
   avatar: '/Assets/avatar/alexwang.jpg'
   title: IBCL发起人
 
