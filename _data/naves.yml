@@ -1,0 +1,11 @@
+- text: About
+  link: '/about/'
+
+- text: Jekyll
+  link: '/jekyll'
+
+- text: Update
+  link: '/update'
+
+- text: All
+  link: '/categories'
