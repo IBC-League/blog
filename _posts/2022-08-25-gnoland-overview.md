@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 ---
 1. Gnoland定位是**智能合约平台**， 和Juno、Agoric、CosmWasm有类似定位
 2. 但是Gnoland选择了Go语言， 这一被Cosmos SDK以及Tendermint广泛使用并经受考验的语言， 并从中借用了Goroutine为智能合约带来并发能力， 并且**开发门槛更友好**， 相对Rust语言开发者数量更加广泛
-3. Gnoland项目最大的特色是**proof of contribition, 即贡献证明**， Jae希望生态治理不是金钱说了算， 而是真正参与到生态并且为生态作出贡献的人， 包括但不限于: 代码、文档、社区反馈、各个领域的精英
+3. Gnoland项目最大的特色是**proof of contribution, 即贡献证明**， Jae希望生态治理不是金钱说了算， 而是真正参与到生态并且为生态作出贡献的人， 包括但不限于: 代码、文档、社区反馈、各个领域的精英
 
 <!--more-->
 
