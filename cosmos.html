@@ -1,0 +1,39 @@
+---
+layout: default
+title: Cosmos Category
+---
+
+<h2 class="post-list-heading">{{ page.list_title  }}</h2>
+<ul class="post-list">
+  {%- for post in site.categories.Cosmos -%}
+  <div style="border: 1px solid #212121;border-radius: 20px;display: block;margin: 12px 0 20px;overflow: hidden;">
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span style="margin: 10px 0 0 10px;" class="post-meta">{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}</span>
+      <h3 style="margin: 0 0 10px 10px;">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if post.show_excerpt -%}
+      <div style="margin: 0 0 0 25px;">
+        {{ post.excerpt }}
+      </div>
+
+      <p class="repo-list-meta">
+
+        {% for cat in post.categories %}
+        <span style="margin: 10px 0 0 25px;border-bottom-style:dotted;" class="meta-info">
+          <span class="octicon octicon-file-directory"></span>
+          <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+        </span>
+        {% endfor %}
+      </p>
+
+
+      {%- endif -%}
+    </li>
+  </div>
+  {%- endfor -%}
+</ul>
+

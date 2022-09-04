@@ -1,11 +1,11 @@
 - text: About
   link: '/about/'
 
-- text: Jekyll
-  link: '/jekyll'
+- text: IBC
+  link: '/ibc/'
 
-- text: Update
-  link: '/update'
+- text: Cosmos
+  link: '/cosmos'
 
 - text: All
   link: '/categories'
