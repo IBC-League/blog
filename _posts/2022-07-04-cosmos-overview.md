@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: post
 title:  "Cosmos生态概览"
 date:   2022-07-04 14:15:31 +0800
 categories: Cosmos

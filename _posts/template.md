@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: post
 title:  ""
 date:   2022-08-01 14:15:31 +0800
 categories: 
