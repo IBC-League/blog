@@ -17,17 +17,14 @@ excerpt_separator: <!--more-->
 
 
 {% assign item =  site.data.iconinfos | where:"username", "Alex Wang"  %}
-{%- if item[0].avatar.size > 0 -%}
+{% assign bob =  site.data.iconinfos | where:"username", "Bob"  %}
 
 {:.tweetstyle}
-![]({{item[0].avatar}})( {{item[0].nickname}},{{item[0].title}})  >>  Move 很酷，能够用 Rust、C、Python 和 Move 在 Solana 上编写智能合约更酷。【原文为英文】 来源于 twitter.com ; Move 很酷，能够用 Rust、C、Python 和 Move 在 Solana 上编写智能合约更酷。【原文为英文】 来源于  链接1
-
+![]({{item[0].avatar}})( {{item[0].nickname}},{{item[0].title}})  >>  demo 01
 
 {:.tweetstyle}
-![]({{item[0].avatar}})( {{item[0].nickname}},{{item[0].title}})  >>  Move 很酷，能够用 Rust、C、Python 和 Move 在 Solana 上编写智能合约更酷。【原文为英文】 来源于 链接2
+![]({{bob[0].avatar}})( {{bob[0].nickname}},{{bob[0].title}})  >>  demo 02
 
-
-{%- endif -%}
 
 
 
