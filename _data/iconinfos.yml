@@ -4,6 +4,7 @@
   title: IBCL发起人
 
 
-- name: Bob
-  avatar: '/Assets/xx.png'
-  title: xx创始人
+- username: 'Bob'
+  nickname: 'Bob'
+  avatar: '/Assets/avatar/alexwang.jpg'
+  title: xx CEO
