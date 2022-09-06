@@ -2,10 +2,10 @@
   link: '/about/'
 
 - text: IBC
-  link: '/ibc'
+  link: '/ibc.html'
 
 - text: Cosmos
-  link: '/cosmos'
+  link: '/cosmos.html'
 
 - text: All
   link: '/categories'
