@@ -20,16 +20,18 @@
   <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
 
+  <meta content="light" name="twitter:widgets:theme"/>
+  <meta content="{{ page.title }}" property="description"/>
+  <meta content="{{ page.title }}" property="og:title"/>
+  <meta content="{{ page.title }}" property="og:description"/>
   {% if page.cover %}
-  <meta name="twitter:card"  content="summary_large_image">
-  <meta name="twitter:image" content="{{ site.url }}{{ page.cover }}">
-  <meta property="og:image" content="{{ site.url }}{{ page.cover }}">
+  <meta content="{{ site.url }}{{ page.cover }}" property="og:image"/>
   {% else %}
-  <meta name="twitter:card"  content="summary">
   <meta property="og:image" content="{{ site.url }}assets/logo.png">
-
   {% endif %}
   <!-- end of Twitter cards -->
+
+  <meta content="summary_large_image" name="twitter:card"/>
 
 
 </head>
