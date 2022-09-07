@@ -9,7 +9,25 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
-  {% if page.cover %}
-  <meta property="og:image" content="{{site.url}}{{ page.cover }}">
+  <!-- Twitter cards -->
+  <meta name="twitter:site"    content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ page.author }}">
+  <meta name="twitter:title"   content="{{ page.title }}">
+
+  {% if post.show_excerpt %}
+  <meta name="twitter:description" content="{{ page.excerpt }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
+
+  {% if page.cover %}
+  <meta name="twitter:card"  content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}{{ page.cover }}">
+  {% else %}
+  <meta name="twitter:card"  content="summary">
+  <meta name="twitter:image" content="{{ site.url }}assets/logo.png">
+  {% endif %}
+  <!-- end of Twitter cards -->
+
+
 </head>
