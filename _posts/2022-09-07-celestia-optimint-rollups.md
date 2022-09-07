@@ -4,6 +4,8 @@ title:  "使用Optimint开发基于Celestia的主权Rollups"
 date:   2022-09-07 12:01:43 +0800
 categories: Celestia Optimint Rollups
 author: 红军大叔
+cover: "{{ site.url }}/assets/projects/optimint.png"
+
 show_excerpt: true
 excerpt_separator: <!--more-->
 ---
