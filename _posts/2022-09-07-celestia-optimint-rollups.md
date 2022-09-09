@@ -9,8 +9,7 @@ cover: "/assets/projects/optimint.png"
 show_excerpt: true
 excerpt_separator: <!--more-->
 ---
-![](https://alextencentcos-1256436283.file.myqcloud.com/roam/2022-09-07-032356.jpg)
-<!--more-->
+
 1. Celestia已经推出测试网Mamaki, 基于此实现了数据可用性API的Alpha版本，并引入数据可用性采样
 
 2. 同时推出**sovereign rollups**， 是一个基于L1的主权和rollup的共享安全组合
@@ -20,9 +19,9 @@ excerpt_separator: <!--more-->
 4. 有两个参考教程作为学习材料， 分别是 [Wordle game](https://docs.celestia.org/developers/wordle/ "Wordle game"), [CosmWasm集成](https://docs.celestia.org/developers/cosmwasm/ "CosmWasm集成") （用Rust开发智能合约）
 
 5. 基于主权的Rollup和以太坊上的Rollup什么区别？ 主权Rollup没有智能合约集， 而是**直接将区块原始数据发布到链上**。
-
+<!--more-->
 6. Celestia负责共识和数据可用性， 而**执行与结算**转移到了主权Rollup上。
-  
+   ![](https://alextencentcos-1256436283.file.myqcloud.com/roam/2022-09-07-032356.jpg)
 
 7. 由于主权Rollup和Celestia之间并没有信任最小化的桥梁， 因此主权Rollup可以获得**独立的自由分叉升级**的能力。 也比非主权rolup更容易进行协调和安全升级。
 
